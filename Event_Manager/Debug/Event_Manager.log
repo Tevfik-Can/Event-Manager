@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\tcgul\source\repos\Event_Manager\Event_Manager\main.cpp(109,11): warning C4129: 'L': unrecognized character escape sequence
+C:\Users\tcgul\source\repos\Event_Manager\Event_Manager\main.cpp(128,11): warning C4129: 'L': unrecognized character escape sequence
+C:\Users\tcgul\source\repos\Event_Manager\Event_Manager\main.cpp(93,7): warning C4101: 'Firstname': unreferenced local variable
+C:\Users\tcgul\source\repos\Event_Manager\Event_Manager\main.cpp(94,7): warning C4101: 'Lastname': unreferenced local variable
+  Event_Manager.vcxproj -> C:\Users\tcgul\source\repos\Event_Manager\Debug\Event_Manager.exe
