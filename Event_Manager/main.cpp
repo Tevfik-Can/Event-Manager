@@ -84,21 +84,99 @@ int main() {
 		break;
 	default:
 		printf("Wrong input exiting the program");
+		exit(0);
 		break;
 	}
 	return 0;
 }
 
 void ATmenu() {
-	;
+	//getAT(username);
+	int optionATM;
+	printf("Welcome to Event Wiever #USERNAME#\n");
+	//Display first 10 events (page 1)
+	//DisplayAT(pagenum);
+	printf("Select from following: \n1-Next Page\n2-Previous Page\n3-Register Event\n4-Search Event\n0-Exit\n\n");
+	scanf_s("%d", &optionATM);
+	do
+	{
+		switch (optionATM)
+		{
+		case 1:
+			//pagenum--;
+			//DisplayAT(pagenum);
+			;
+			break;
+		case 2:
+			//pagenum--;
+			//DisplayAT(pagenum);
+			;
+			break;
+		case 3:
+			printf("Select the event ID you wish to register:");
+			;
+			break;
+		case 4:
+			//search();
+			;
+			break;
+		case 0:
+			printf("Exiting the program\n");
+			break;
+		default:
+			printf("Wrong input exiting try again\n");
+			exit(0);
+			break;
+		}
+	} while (true);
 }
 
 void ADmenu() {
+	//getAD(username);
+	int optionADM;
+	printf("Welcome to Event Manager #USERNMAE#\n");
+
+	printf("Select from following: \n1-Display Events\n2-Add Event\n3-Delete Event\n4-Edit Event\n5-View Attendees\n6-Delte Attendees #Maybe??#\n0-Exit\n\n");
+	scanf_s("%d", &optionADM);
+	do
+	{
+		switch (optionADM)
+		{
+		case 1:
+			//pagenum--;
+			//DisplayAT(pagenum);
+			;
+			break;
+		case 2:
+			;
+			break;
+		case 3:
+			;
+			break;
+		case 4:
+			;
+			break;
+		case 5:
+			;
+			break;
+		case 6:
+			printf("DIDNT IMPLEMENT IT YET\n");
+			break;
+		case 0:
+			printf("Exiting the program\n");
+			break;
+		default:
+			exit(0);
+			printf("Wrong input exiting try again\n");
+			break;
+		}
+	} while (true);
 	;
 }
+
 void Loginmain() {
 	system("cls");
-	int option;
+	int optionL;
 	char Firstname[20];
 	char Lastname[20];
 	char Username[20];
@@ -108,9 +186,9 @@ void Loginmain() {
 	char Key[20] = "TEST";
 	printf("\n----------------------------- Register Menu -----------------------------\n");
 	printf("Pick One: \n1- Attendee Register\n2- Administrator Register (Requires Key)\n\n");
-	scanf_s("%d", &option);
+	scanf_s("%d", &optionL);
 
-	switch (option)
+	switch (optionL)
 	{
 	case 1:
 		do
@@ -157,6 +235,7 @@ void Loginmain() {
 		} while (true);
 		break;
 	default:
+		exit(0);
 		printf("Wrong input exiting the program");
 		break;
 	}
@@ -164,7 +243,7 @@ void Loginmain() {
 
 void Registermain() {
 	system("cls");
-	int option;
+	int optionR;
 	char Firstname[20];
 	char Lastname[20];
 	char Username[20];
@@ -174,9 +253,9 @@ void Registermain() {
 	char Key[20]= "TEST";
 	printf("\n----------------------------- Register Menu -----------------------------\n");
 	printf("Pick One: \n1- Attendee Register\n2- Administrator Register (Requires Key)\n\n");
-	scanf_s("%d", &option);
+	scanf_s("%d", &optionR);
 
-	switch (option)
+	switch (optionR)
 	{
 	case 1:
 		do
@@ -233,11 +312,13 @@ void Registermain() {
 			else
 			{
 				printf("Try again");
+				
 			}
 			
 		} while (true);
 		break;
 	default:
+		exit(0);
 		printf("Wrong input exiting the program");
 		break;
 	}
